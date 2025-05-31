@@ -1,6 +1,6 @@
-local behavior_node = require 'behavior3.behavior_node'
-local behavior_ret = require 'behavior3.behavior_ret'
-local behavior_event = require 'behavior3.behavior_event'
+local behavior_node = require 'lua.libs.behavior3lua.behavior3.behavior_node'
+local behavior_ret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
+local behavior_event = require 'lua.libs.behavior3lua.behavior3.behavior_event'
 
 ---@alias BehaviorCallback fun(...)
 

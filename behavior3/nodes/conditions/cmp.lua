@@ -1,6 +1,6 @@
 -- Cmp
 
-local bret = require 'behavior3.behavior_ret'
+local bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
 
 local function ret(r)
     return r and bret.SUCCESS or bret.FAIL

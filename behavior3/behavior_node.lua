@@ -1,5 +1,5 @@
-local bret = require 'behavior3.behavior_ret'
-local process = require 'behavior3.sample_process'
+local bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
+local process = require 'lua.libs.behavior3lua.behavior3.sample_process'
 local debugger
 
 local sformat = string.format

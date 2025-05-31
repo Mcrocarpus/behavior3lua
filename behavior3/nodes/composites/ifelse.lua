@@ -1,7 +1,7 @@
 -- IfElse
 --
 
-local bret = require 'behavior3.behavior_ret'
+local bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
 
 local function child_ret(node, env, idx)
     local r = node.children[idx]:run(env)
