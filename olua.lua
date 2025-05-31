@@ -1,7 +1,7 @@
 local cjson
 
 xpcall(function ()
-    cjson = require "cjson.safe"
+    cjson = require "lua.libs.behavior3lua.cjson.safe"
 end, function ()
     cjson = {}
 end)

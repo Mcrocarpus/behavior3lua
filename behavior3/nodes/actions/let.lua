@@ -1,5 +1,5 @@
-local bret = require "behavior3.behavior_ret"
-local butil = require "behavior3.behavior_util"
+local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
+local butil = require "lua.libs.behavior3lua.behavior3.behavior_util"
 
 ---@type BehaviorNodeDefine
 local M = {

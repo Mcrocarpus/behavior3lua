@@ -1,7 +1,7 @@
 -- GetHp
 --
 
-local bret = require "behavior3.behavior_ret"
+local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 
 local M = {
     name = "GetHp",

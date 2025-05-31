@@ -1,8 +1,8 @@
 
-local behavior_tree = require "behavior3.behavior_tree"
-local behavior_node = require "behavior3.behavior_node"
+local behavior_tree = require "lua.libs.behavior3lua.behavior3.behavior_tree"
+local behavior_node = require "lua.libs.behavior3lua.behavior3.behavior_node"
 
-local process = require "example.process"
+local process = require "lua.libs.behavior3lua.example.process"
 process.Listen = {
     run = function()
         print("Listen not defined")
@@ -12,7 +12,7 @@ process.Listen = {
 
 behavior_node.process(process)
 
-local json = require "json"
+local json = require "lua.libs.behavior3lua.json"
 
 local function load_tree(path)
     local file, err = io.open(path, 'r')

@@ -1,7 +1,7 @@
 package.path = package.path .. ';lualib/?.lua'
 
-local olua = require "olua"
-local process = require "example.process"
+local olua = require "lua.libs.behavior3lua.olua"
+local process = require "lua.libs.behavior3lua.example.process"
 
 local nodes = {}
 for k, v in pairs(process) do
