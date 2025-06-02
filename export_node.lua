@@ -1,5 +1,49 @@
 package.path = package.path .. ';lualib/?.lua'
 
+Battle = {}
+Char = {}
+Data = {}
+Ext = {}
+Field = {}
+Http = {}
+Iconv = {}
+Item = {}
+Map = {}
+NL = {}
+NLG = {}
+Obj = {}
+Pet = {}
+Protocol = {}
+Recipe = {}
+Setup = {}
+Skill = {}
+SQL = {}
+Stall = {}
+Tech = {}
+TechArea = {}
+
+require "lua.docs.Battle"
+require "lua.docs.Char"
+require "lua.docs.Data"
+require "lua.docs.Ext"
+require "lua.docs.Field"
+require "lua.docs.Http"
+require "lua.docs.Iconv"
+require "lua.docs.Item"
+require "lua.docs.Map"
+require "lua.docs.NL"
+require "lua.docs.NLG"
+require "lua.docs.Obj"
+require "lua.docs.Pet"
+require "lua.docs.Protocol"
+require "lua.docs.Recipe"
+require "lua.docs.Setup"
+require "lua.docs.Skill"
+require "lua.docs.SQL"
+require "lua.docs.Stall"
+require "lua.docs.Tech"
+require "lua.docs.TechArea"
+
 local olua = require "lua.libs.behavior3lua.olua"
 local process = require "lua.libs.behavior3lua.example.process"
 
@@ -37,10 +81,10 @@ table.sort(nodes, function(a, b)
     return a.name < b.name
 end)
 
-local str = olua.json_stringify(nodes, { indent = 2})
+local str = olua.json_stringify(nodes, { indent = 2 })
 print(str)
 
-local path = "workspace/node-config.b3-setting"
+local path = "lua/libs/behavior3lua/workspace/node-config.b3-setting"
 local file = io.open(path, "w")
 if file then
     local success, err = pcall(function()
