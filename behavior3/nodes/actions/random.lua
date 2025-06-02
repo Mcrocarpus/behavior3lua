@@ -5,18 +5,18 @@ local M = {
     name = "Random",
     type = "Action",
     desc = "返回一个随机数",
-    input = { "最小值?", "最大值?" },
-    output = { "随机数" },
+    input = { "最小�??", "最大�??" },
+    output = { "随机�?" },
     args = {
         {
             name = "min",
             type = "float?",
-            desc = "最小值"
+            desc = "最小�?"
         },
         {
             name = "max",
             type = "float?",
-            desc = "最大值"
+            desc = "最大�?"
         },
         {
             name = "floor",

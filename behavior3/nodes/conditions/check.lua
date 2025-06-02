@@ -4,16 +4,16 @@ local bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
 local M = {
     name = "Check",
     type = "Condition",
-    desc = "æ£€æŸ¥Trueæˆ–False",
+    desc = "¼ì²éTrue»òFalse",
     args = {
         {
             name = "value",
             type = "code?",
-            desc = "å€¼"
+            desc = "Öµ"
         },
     },
     doc = [[
-        + åšç®€å•æ•°å€¼å…¬å¼åˆ¤å®šï¼Œè¿”å›æˆåŠŸæˆ–å¤±è´¥
+        + ×ö¼òµ¥ÊıÖµ¹«Ê½ÅĞ¶¨£¬·µ»Ø³É¹¦»òÊ§°Ü
     ]],
     run = function(node, env)
         return node:get_env_args("value", env) and bret.SUCCESS or bret.FAIL

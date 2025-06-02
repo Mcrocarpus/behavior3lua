@@ -7,9 +7,9 @@ local bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
 local M = {
     name = 'Parallel',
     type = 'Composite',
-    desc = 'å¹¶è¡Œæ‰§è¡Œ',
+    desc = '²¢ĞĞÖ´ĞĞ',
     doc = [[
-        æ‰§è¡Œæ‰€æœ‰å­èŠ‚ç‚¹å¹¶è¿”å›æˆåŠŸ
+        Ö´ĞĞËùÓĞ×Ó½Úµã²¢·µ»Ø³É¹¦
     ]],
     run = function(node, env)
         local count = 0

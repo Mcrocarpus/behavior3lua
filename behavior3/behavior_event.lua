@@ -1,10 +1,10 @@
 ---@enum BehaviorTreeEvent
 local BehaviorTreeEvent = {
-    INTERRUPTED = "treeInterrupted",           -- 琛屼负鏍戣涓柇
-    BEFORE_RUN = "beforeRunTree",              -- 琛屼负鏍戝紑濮嬫墽琛屽墠
-    AFTER_RUN = "afterRunTree",                -- 琛屼负鏍戞墽琛屽畬鎴愬悗
-    AFTER_RUN_SUCCESS = "afterRunTreeSuccess", -- 琛屼负鏍戞墽琛屾垚鍔熷悗
-    AFTER_RUN_FAILURE = "afterRunTreeFailure", -- 琛屼负鏍戞墽琛屽け璐ュ悗
+    INTERRUPTED = "treeInterrupted",           -- 行为树被中断
+    BEFORE_RUN = "beforeRunTree",              -- 行为树开始执行前
+    AFTER_RUN = "afterRunTree",                -- 行为树执行完成后
+    AFTER_RUN_SUCCESS = "afterRunTreeSuccess", -- 行为树执行成功后
+    AFTER_RUN_FAILURE = "afterRunTreeFailure", -- 行为树执行失败后
 }
 
 return BehaviorTreeEvent

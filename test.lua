@@ -55,7 +55,7 @@ local function test_hero()
         owner = hero,
     })
 
-    -- 绉诲姩鍒扮洰鏍囧苟鏀诲嚮
+    -- 移动到目标并攻击
     btree:run()
     btree:run()
     btree:run()
@@ -63,7 +63,7 @@ local function test_hero()
     btree:run()
     btree:run()
 
-    -- 鍚庢憞
+    -- 后摇
     btree:run()
     btree:interrupt()
     btree:run()

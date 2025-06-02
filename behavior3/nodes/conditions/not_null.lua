@@ -4,8 +4,8 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "NotNull",
     type = "Condition",
-    desc = "åˆ¤æ–­å˜é‡æ˜¯å¦å­˜åœ¨",
-    input = { "åˆ¤æ–­çš„å˜é‡" },
+    desc = "ÅĞ¶Ï±äÁ¿ÊÇ·ñ´æÔÚ",
+    input = { "ÅĞ¶ÏµÄ±äÁ¿" },
     run = function(node, env, value)
         return value ~= nil and bret.SUCCESS or bret.FAIL
     end

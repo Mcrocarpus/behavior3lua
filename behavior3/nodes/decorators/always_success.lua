@@ -7,10 +7,10 @@ local bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
 local M = {
     name = 'AlwaysSuccess',
     type = 'Decorator',
-    desc = 'å§‹ç»ˆè¿”å›æˆåŠŸ',
+    desc = 'Ê¼ÖÕ·µ»Ø³É¹¦',
     doc = [[
-        + åªèƒ½æœ‰ä¸€ä¸ªå­èŠ‚ç‚¹,å¤šä¸ªä»…æ‰§è¡Œç¬¬ä¸€ä¸ª
-        + ä¸ç®¡å­èŠ‚ç‚¹æ˜¯å¦æˆåŠŸéƒ½è¿”å›æˆåŠŸ
+        + Ö»ÄÜÓĞÒ»¸ö×Ó½Úµã,¶à¸ö½öÖ´ĞĞµÚÒ»¸ö
+        + ²»¹Ü×Ó½ÚµãÊÇ·ñ³É¹¦¶¼·µ»Ø³É¹¦
     ]],
     run = function(node, env)
         local yeild, last_ret = node:resume(env)

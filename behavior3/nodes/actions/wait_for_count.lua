@@ -7,7 +7,7 @@ local bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
 local M = {
     name = 'WaitForCount',
     type = 'Action',
-    desc = '绛夊緟鐗瑰畾娆℃暟',
+    desc = '等待特定次数',
     args = {
         {
             name = 'tick',

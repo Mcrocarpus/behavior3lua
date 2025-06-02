@@ -6,8 +6,8 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "MoveToTarget",
     type = "Action",
-    desc = "ç§»åŠ¨åˆ°ç›®æ ‡",
-    input = {"{ç›®æ ‡}"},
+    desc = "ÒÆ¶¯µ½Ä¿±ê",
+    input = {"{Ä¿±ê}"},
 }
 
 local abs     = math.abs

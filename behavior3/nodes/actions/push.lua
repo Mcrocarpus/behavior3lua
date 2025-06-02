@@ -4,11 +4,11 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "Push",
     type = "Action",
-    desc = "å‘æ•°ç»„ä¸­æ·»åŠ å…ƒç´ ",
-    input = { "æ•°ç»„", "å…ƒç´ " },
+    desc = "ÏòÊı×éÖĞÌí¼ÓÔªËØ",
+    input = { "Êı×é", "ÔªËØ" },
     doc = [[
-        + å½“è¾“å…¥çš„â€œæ•°ç»„â€ä¸æ˜¯æ•°ç»„ç±»å‹æ—¶è¿”å›ã€Œå¤±è´¥ã€
-        + å…¶ä½™è¿”å›ã€ŒæˆåŠŸã€ã€‚
+        + µ±ÊäÈëµÄ¡°Êı×é¡±²»ÊÇÊı×éÀàĞÍÊ±·µ»Ø¡¸Ê§°Ü¡¹
+        + ÆäÓà·µ»Ø¡¸³É¹¦¡¹¡£
     ]],
     run = function(node, env, arr, value)
         if not arr then

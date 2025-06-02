@@ -5,7 +5,7 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "FindEnemy",
     type = "Condition",
-    desc = "æŸ¥æ‰¾æ•Œäºº",
+    desc = "²éÕÒµĞÈË",
     args = {
         {
             name = 'x',
@@ -20,22 +20,22 @@ local M = {
         {
             name = 'w',
             type = 'int?',
-            desc = 'å®½'
+            desc = '¿í'
         },
         {
             name = 'h',
             type = 'int?',
-            desc = 'é«˜'
+            desc = '¸ß'
         },
         {
             name = 'count',
             type = 'string?',
-            desc = 'æŸ¥æ‰¾ä¸Šé™'
+            desc = '²éÕÒÉÏÏŞ'
         },
     },
-    output = {"ç›®æ ‡å•ä½"},
+    output = {"Ä¿±êµ¥Î»"},
     doc = [[
-        + æ²¡æ‰¾åˆ°è¿”å›å¤±è´¥
+        + Ã»ÕÒµ½·µ»ØÊ§°Ü
     ]]
 }
 

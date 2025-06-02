@@ -4,19 +4,19 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "RepeatUntilSuccess",
     type = "Decorator",
-    desc = "一直尝试直到子节点返回成功",
-    input = { "最大循环次数?" },
+    desc = "һֱ����ֱ���ӽڵ㷵�سɹ�",
+    input = { "���ѭ������?" },
     args = {
         {
             name = "maxLoop",
             type = "int?",
-            desc = "最大循环次数"
+            desc = "���ѭ������"
         }
     },
     doc = [[
-        + 只能有一个子节点，多个仅执行第一个
-        + 只有当子节点返回成功时，才返回成功，其它情况返回运行中状态
-        + 如果设定了尝试次数，超过指定次数则返回失败
+        + ֻ����һ���ӽڵ㣬�����ִ�е�һ��
+        + ֻ�е��ӽڵ㷵�سɹ�ʱ���ŷ��سɹ��������������������״̬
+        + ����趨�˳��Դ���������ָ�������򷵻�ʧ��
     ]],
     run = function(node, env, max_loop)
         max_loop = max_loop or node.args.maxLoop or math.maxinteger

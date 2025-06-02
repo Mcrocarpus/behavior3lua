@@ -66,7 +66,7 @@ function mt:run(env)
     assert(ret, self.info)
     if ret == bret.ABORT then
         env.abort = true
-        return bret.RUNNING -- 为了安全退栈
+        return bret.RUNNING -- Ϊ�˰�ȫ��ջ
     end
     if ret ~= bret.RUNNING then
         for i, var_name in ipairs(self.data.output or {}) do

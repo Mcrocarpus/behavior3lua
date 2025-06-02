@@ -3,7 +3,7 @@
   "root": {
     "id": 1,
     "name": "Sequence",
-    "desc": "æ€ªç‰©æµ‹è¯•AI",
+    "desc": "¹ÖÎï²âÊÔAI",
     "args": {},
     "children": [
       {
@@ -34,7 +34,7 @@
               {
                 "id": 6,
                 "name": "Log",
-                "desc": "æ”»å‡»",
+                "desc": "¹¥»÷",
                 "args": {
                   "message": "Attack!"
                 }
@@ -51,7 +51,7 @@
           {
             "id": 8,
             "name": "Log",
-            "desc": "é€ƒè·‘",
+            "desc": "ÌÓÅÜ",
             "args": {
               "message": "Run!"
             },
@@ -70,5 +70,5 @@
       }
     ]
   },
-  "desc": "æ€ªç‰©æµ‹è¯•AI"
+  "desc": "¹ÖÎï²âÊÔAI"
 }

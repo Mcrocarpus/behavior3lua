@@ -1,23 +1,23 @@
-local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
+gbklocal bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 
 ---@type BehaviorNodeDefine
 local M = {
     name = "Repeat",
     type = 'Action',
-    desc = "å¾ªç¯æ‰§è¡Œ",
+    desc = "Ñ­»·Ö´ĞĞ",
     doc = [[
-        + åªèƒ½æœ‰ä¸€ä¸ªå­èŠ‚ç‚¹ï¼Œå¤šä¸ªä»…æ‰§è¡Œç¬¬ä¸€ä¸ª
-        + å½“å­èŠ‚ç‚¹è¿”å›ã€Œå¤±è´¥ã€æ—¶ï¼Œé€€å‡ºéå†å¹¶è¿”å›ã€Œå¤±è´¥ã€çŠ¶æ€
-        + å…¶å®ƒæƒ…å†µè¿”å›æˆåŠŸ/æ­£åœ¨è¿è¡Œ
+        + Ö»ÄÜÓĞÒ»¸ö×Ó½Úµã£¬¶à¸ö½öÖ´ĞĞµÚÒ»¸ö
+        + µ±×Ó½Úµã·µ»Ø¡¸Ê§°Ü¡¹Ê±£¬ÍË³ö±éÀú²¢·µ»Ø¡¸Ê§°Ü¡¹×´Ì¬
+        + ÆäËüÇé¿ö·µ»Ø³É¹¦/ÕıÔÚÔËĞĞ
     ]],
     args = {
         {
             name = "count",
             type = "int?",
-            desc = "æ¬¡æ•°"
+            desc = "´ÎÊı"
         },
     },
-    input = { "æ¬¡æ•°(int)?" },
+    input = { "´ÎÊı(int)?" },
     run = function(node, env, count)
         count = count or node.args.count
         local last_i, resume_ret = node:resume(env)

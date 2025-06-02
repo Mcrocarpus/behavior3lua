@@ -4,11 +4,11 @@
             name: "Concat",
             type: "Action",
             status: ["success", "failure"],
-            desc: "å°†ä¸¤ä¸ªè¾“å…¥åˆå¹¶ä¸ºä¸€ä¸ªæ•°ç»„ï¼Œå¹¶è¿”å›æ–°æ•°ç»„",
-            input: ["æ•°ç»„1", "æ•°ç»„2"],
-            output: ["æ–°æ•°ç»„"],
+            desc: "½«Á½¸öÊäÈëºÏ²¢ÎªÒ»¸öÊı×é£¬²¢·µ»ØĞÂÊı×é",
+            input: ["Êı×é1", "Êı×é2"],
+            output: ["ĞÂÊı×é"],
             doc: `
-                + å¦‚æœè¾“å…¥ä¸æ˜¯æ•°ç»„ï¼Œåˆ™è¿”å›\`å¤±è´¥\`
+                + Èç¹ûÊäÈë²»ÊÇÊı×é£¬Ôò·µ»Ø\`Ê§°Ü\`
             `,
         };
     }
@@ -20,9 +20,9 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "Concat",
     type = "Action",
-    desc = "å°†ä¸¤ä¸ªè¾“å…¥åˆå¹¶ä¸ºä¸€ä¸ªæ•°ç»„ï¼Œå¹¶è¿”å›æ–°æ•°ç»„",
-    input = { "æ•°ç»„1", "æ•°ç»„2" },
-    output = { "æ–°æ•°ç»„" },
+    desc = "½«Á½¸öÊäÈëºÏ²¢ÎªÒ»¸öÊı×é£¬²¢·µ»ØĞÂÊı×é",
+    input = { "Êı×é1", "Êı×é2" },
+    output = { "ĞÂÊı×é" },
     run = function(node, env, arr1, arr2)
         if not arr1 or not arr2 then
             return bret.FAIL

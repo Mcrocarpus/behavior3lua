@@ -1,8 +1,8 @@
 ---@alias BehaviorRet
----| "FAIL" # 澶辫触
----| "SUCCESS" # 鎴愬姛
----| "RUNNING" # 姝ｅ湪杩愯
----| "ABORT" # 涓柇
+---| "FAIL" # 失败
+---| "SUCCESS" # 成功
+---| "RUNNING" # 正在运行
+---| "ABORT" # 中断
 
 return {
     FAIL    = "FAIL",

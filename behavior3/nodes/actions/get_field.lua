@@ -7,20 +7,20 @@ return {
     type = "Action",
     children = 0,
     status = {"success", "failure"},
-    desc = "è·å–å¯¹è±¡çš„å­—æ®µå€¼",
+    desc = "»ñÈ¡¶ÔÏóµÄ×Ö¶ÎÖµ",
     args = {
         {
             name = "field",
             type = "string?",
-            desc = "å­—æ®µ(field)",
-            oneof = "å­—æ®µ(field)",
+            desc = "×Ö¶Î(field)",
+            oneof = "×Ö¶Î(field)",
         },
     },
-    input = {"å¯¹è±¡", "å­—æ®µ(field)?"},
-    output = {"å­—æ®µå€¼(value)"},
+    input = {"¶ÔÏó", "×Ö¶Î(field)?"},
+    output = {"×Ö¶ÎÖµ(value)"},
     doc = [[
-        + åˆæ³•å…ƒç´ ä¸åŒ…æ‹¬ \`undefined\` å’Œ \`null\`
-        + åªæœ‰è·å–åˆ°åˆæ³•å…ƒç´ æ—¶å€™æ‰ä¼šè¿”å› \`success\`ï¼Œå¦åˆ™è¿”å› \`failure\`
+        + ºÏ·¨ÔªËØ²»°üÀ¨ \`undefined\` ºÍ \`null\`
+        + Ö»ÓĞ»ñÈ¡µ½ºÏ·¨ÔªËØÊ±ºò²Å»á·µ»Ø \`success\`£¬·ñÔò·µ»Ø \`failure\`
     ]],
 
     run = function(node, env, obj, field)

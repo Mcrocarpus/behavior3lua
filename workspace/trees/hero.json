@@ -3,7 +3,7 @@
   "root": {
     "id": 1,
     "name": "Selector",
-    "desc": "è‹±é›„æµ‹è¯•AI",
+    "desc": "Ó¢ÐÛ²âÊÔAI",
     "args": {},
     "children": [
       {
@@ -75,7 +75,7 @@
       {
         "id": 11,
         "name": "Sequence",
-        "desc": "æ”»å‡»",
+        "desc": "¹¥»÷",
         "args": {},
         "children": [
           {
@@ -111,7 +111,7 @@
       {
         "id": 15,
         "name": "Sequence",
-        "desc": "ç§»åŠ¨",
+        "desc": "ÒÆ¶¯",
         "args": {},
         "children": [
           {
@@ -140,7 +140,7 @@
       {
         "id": 18,
         "name": "Sequence",
-        "desc": "é€ƒè·‘",
+        "desc": "ÌÓÅÜ",
         "args": {},
         "children": [
           {
@@ -168,5 +168,5 @@
     ]
   },
   "export": true,
-  "desc": "è‹±é›„æµ‹è¯•AI"
+  "desc": "Ó¢ÐÛ²âÊÔAI"
 }

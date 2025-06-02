@@ -4,16 +4,16 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "Calculate",
     type = "Action",
-    desc = "è®¡ç®—å…¬å¼",
+    desc = "¼ÆËã¹«Ê½",
     args = {
         {
             name = "value",
             type = "code?",
-            desc = "å…¬å¼"
+            desc = "¹«Ê½"
         },
     },
     doc = [[
-        + åšç®€å•æ•°å€¼å…¬å¼è®¡ç®—
+        + ×ö¼òµ¥ÊıÖµ¹«Ê½¼ÆËã
     ]],
     run = function(node, env)
         local value = node:get_env_args("value", env)

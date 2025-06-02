@@ -4,8 +4,8 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "Now",
     type = "Action",
-    desc = "鑾峰彇褰撳墠鏃堕棿",
-    output = { "褰撳墠鏃堕棿" },
+    desc = "获取当前时间",
+    output = { "当前时间" },
     run = function(node, env)
         return bret.SUCCESS, env.ctx.time
     end

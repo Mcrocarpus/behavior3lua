@@ -7,10 +7,10 @@ local bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
 local M = {
     name = 'Sequence',
     type = 'Composite',
-    desc = 'é¡ºåºæ‰§è¡Œ',
+    desc = 'Ë³ĞòÖ´ĞĞ',
     doc = [[
-        + ä¸€ç›´å¾€ä¸‹æ‰§è¡Œï¼Œåªæœ‰å½“æ‰€æœ‰å­èŠ‚ç‚¹éƒ½è¿”å›æˆåŠŸ, æ‰è¿”å›æˆåŠŸ
-        + å­èŠ‚ç‚¹æ˜¯ä¸ï¼ˆANDï¼‰çš„å…³ç³»
+        + Ò»Ö±ÍùÏÂÖ´ĞĞ£¬Ö»ÓĞµ±ËùÓĞ×Ó½Úµã¶¼·µ»Ø³É¹¦, ²Å·µ»Ø³É¹¦
+        + ×Ó½ÚµãÊÇÓë£¨AND£©µÄ¹ØÏµ
     ]],
     run = function(node, env)
         local last_idx, last_ret = node:resume(env)

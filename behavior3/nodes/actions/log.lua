@@ -7,12 +7,12 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "Log",
     type = "Action",
-    desc = "鎵撳嵃鏃ュ織",
+    desc = "打印日志",
     args = {
         {
             name = "message",
             type = "string",
-            desc = "鏃ュ織"
+            desc = "日志"
         }
     },
     run = function(node, env)

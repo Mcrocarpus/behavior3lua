@@ -1,13 +1,13 @@
-local bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
+gbklocal bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
 
 ---@type BehaviorNodeDefine
 local M = {
     name = 'Invert',
     type = 'Decorator',
-    desc = 'å–å',
+    desc = 'È¡·´',
     doc = [[
-        + å°†å­èŠ‚ç‚¹çš„è¿”å›å€¼å–å
-        + åªèƒ½æœ‰ä¸€ä¸ªå­èŠ‚ç‚¹ï¼Œå¤šä¸ªä»…æ‰§è¡Œç¬¬ä¸€ä¸ª
+        + ½«×Ó½ÚµãµÄ·µ»ØÖµÈ¡·´
+        + Ö»ÄÜÓĞÒ»¸ö×Ó½Úµã£¬¶à¸ö½öÖ´ĞĞµÚÒ»¸ö
     ]],
     run = function(node, env)
         local r

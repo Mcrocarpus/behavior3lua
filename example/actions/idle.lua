@@ -6,7 +6,7 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "Idle",
     type = "Action",
-    desc = "å¾…æœº",
+    desc = "´ý»ú",
 }
 
 function M.run(node, env)

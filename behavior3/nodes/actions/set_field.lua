@@ -7,17 +7,17 @@ return {
     type = "Action",
     children = 0,
     status = {"success", "failure"},
-    desc = "è®¾ç½®å¯¹è±¡å­—æ®µå€¼",
-    input = {"è¾“å…¥å¯¹è±¡", "å­—æ®µ(field)?", "å€¼(value)?"},
+    desc = "ÉèÖÃ¶ÔÏó×Ö¶ÎÖµ",
+    input = {"ÊäÈë¶ÔÏó", "×Ö¶Î(field)?", "Öµ(value)?"},
     args = {
-        { name = "field", type = "string?", desc = "å­—æ®µ(field)", oneof = "å­—æ®µ(field)" },
-        { name = "value", type = "json?", desc = "å€¼(value)", oneof = "å€¼(value)" },
+        { name = "field", type = "string?", desc = "×Ö¶Î(field)", oneof = "×Ö¶Î(field)" },
+        { name = "value", type = "json?", desc = "Öµ(value)", oneof = "Öµ(value)" },
     },
     doc = [[
-        + å¯¹è¾“å…¥å¯¹è±¡è®¾ç½® \`field\` å’Œ \`value\`
-        + è¾“å…¥å‚æ•°1å¿…é¡»ä¸ºå¯¹è±¡ï¼Œå¦åˆ™è¿”å› \`failure\`
-        + å¦‚æœ \`field\` ä¸ä¸º \`string\`, ä¹Ÿè¿”å› \`failure\`
-        + å¦‚æœ \`value\` ä¸º \`undefined\` æˆ– \`null\`, åˆ™åˆ é™¤ \`field\` çš„å€¼
+        + ¶ÔÊäÈë¶ÔÏóÉèÖÃ \`field\` ºÍ \`value\`
+        + ÊäÈë²ÎÊı1±ØĞëÎª¶ÔÏó£¬·ñÔò·µ»Ø \`failure\`
+        + Èç¹û \`field\` ²»Îª \`string\`, Ò²·µ»Ø \`failure\`
+        + Èç¹û \`value\` Îª \`undefined\` »ò \`null\`, ÔòÉ¾³ı \`field\` µÄÖµ
     ]],
 
     run = function(node, env, obj, field, value)

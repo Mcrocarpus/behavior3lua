@@ -5,8 +5,8 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "Attack",
     type = "Action",
-    desc = "æ”»å‡»",
-    input = {"{ç›®æ ‡}"},
+    desc = "¹¥»÷",
+    input = {"{Ä¿±ê}"},
 }
 
 function M.run(node, env, enemy)

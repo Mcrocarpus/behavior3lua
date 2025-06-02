@@ -6,8 +6,8 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "GetHp",
     type = "Action",
-    desc = "è·å–ç”Ÿå‘½å€¼",
-    output = {"ç”Ÿå‘½å€¼"},
+    desc = "»ñÈ¡ÉúÃüÖµ",
+    output = {"ÉúÃüÖµ"},
 }
 
 function M.run(node, env)

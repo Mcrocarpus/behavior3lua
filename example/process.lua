@@ -1,5 +1,5 @@
 return {
-    -- 澶嶅悎鑺傜偣
+    -- 复合节点
     Parallel = require "lua.libs.behavior3lua.behavior3.nodes.composites.parallel",
     Selector = require "lua.libs.behavior3lua.behavior3.nodes.composites.selector",
     Sequence = require "lua.libs.behavior3lua.behavior3.nodes.composites.sequence",
@@ -7,7 +7,7 @@ return {
 
 
 
-    -- 瑁呴グ鑺傜偣
+    -- 装饰节点
     Once               = require "lua.libs.behavior3lua.behavior3.nodes.decorators.once",
     Invert             = require "lua.libs.behavior3lua.behavior3.nodes.decorators.invert",
     AlwaysFail         = require "lua.libs.behavior3lua.behavior3.nodes.decorators.always_fail",
@@ -17,7 +17,7 @@ return {
     Repeat             = require "lua.libs.behavior3lua.behavior3.nodes.decorators.repeat",
 
 
-    -- 鏉′欢鑺傜偣
+    -- 条件节点
     Cmp       = require "lua.libs.behavior3lua.behavior3.nodes.conditions.cmp",
     Check     = require "lua.libs.behavior3lua.behavior3.nodes.conditions.check",
     IsNull    = require "lua.libs.behavior3lua.behavior3.nodes.conditions.is_null",
@@ -25,7 +25,7 @@ return {
     FindEnemy = require "lua.libs.behavior3lua.example.conditions.find_enemy",
 
 
-    -- 琛屼负鑺傜偣
+    -- 行为节点
     ForEach      = require "lua.libs.behavior3lua.behavior3.nodes.actions.foreach",
     Log          = require "lua.libs.behavior3lua.behavior3.nodes.actions.log",
     Wait         = require "lua.libs.behavior3lua.behavior3.nodes.actions.wait",

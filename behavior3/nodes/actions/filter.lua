@@ -4,14 +4,14 @@ local bret = require "lua.libs.behavior3lua.behavior3.behavior_ret"
 local M = {
     name = "Filter",
     type = "Action",
-    desc = "è¿”å›žæ»¡è¶³æ¡ä»¶çš„å…ƒç´ ",
-    input = { "æ•°ç»„" },
-    output = { "å˜é‡", "æ–°æ•°ç»„" },
+    desc = "·µ»ØÂú×ãÌõ¼þµÄÔªËØ",
+    input = { "Êý×é" },
+    output = { "±äÁ¿", "ÐÂÊý×é" },
     doc = [[
-        + åªèƒ½æœ‰ä¸€ä¸ªå­èŠ‚ç‚¹ï¼Œå¤šä¸ªä»…æ‰§è¡Œç¬¬ä¸€ä¸ª
-        + å½“å­èŠ‚ç‚¹è¿”å›žã€Œè¿è¡Œä¸­ã€æ—¶ï¼Œè¿”å›žã€Œè¿è¡Œä¸­ã€çŠ¶æ€
-        + éåŽ†è¾“å…¥æ•°ç»„ï¼Œå°†æ»¡è¶³æ¡ä»¶çš„å…ƒç´ æ”¾å…¥æ–°æ•°ç»„
-        + å½“æ–°æ•°ç»„ä¸ºç©ºæ—¶ï¼Œè¿”å›žã€Œå¤±è´¥ã€
+        + Ö»ÄÜÓÐÒ»¸ö×Ó½Úµã£¬¶à¸ö½öÖ´ÐÐµÚÒ»¸ö
+        + µ±×Ó½Úµã·µ»Ø¡¸ÔËÐÐÖÐ¡¹Ê±£¬·µ»Ø¡¸ÔËÐÐÖÐ¡¹×´Ì¬
+        + ±éÀúÊäÈëÊý×é£¬½«Âú×ãÌõ¼þµÄÔªËØ·ÅÈëÐÂÊý×é
+        + µ±ÐÂÊý×éÎª¿ÕÊ±£¬·µ»Ø¡¸Ê§°Ü¡¹
     ]],
     run = function(node, env, arr)
         if not arr or #arr == 0 then

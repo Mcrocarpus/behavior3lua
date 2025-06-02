@@ -10,19 +10,19 @@ end
 local M = {
     name = 'Cmp',
     type = 'Condition',
-    desc = 'æ¯”è¾ƒå€¼å¤§å°',
+    desc = '±È½ÏÖµ´óÐ¡',
     args = {
-        { name = 'value', type = 'code?', desc = 'å€¼' },
+        { name = 'value', type = 'code?', desc = 'Öµ' },
         { name = 'gt', type = 'int?', desc = '>' },
         { name = 'ge', type = 'int?', desc = '>=' },
         { name = 'eq', type = 'int?', desc = '==' },
         { name = 'le', type = 'int?', desc = '<=' },
         { name = 'lt', type = 'int?', desc = '<' }
     },
-    input = { 'å€¼(int)' },
+    input = { 'Öµ(int)' },
     doc = [[
-        + è‹¥å€¼ä¸ºç©ºï¼Œè¿”å›žå¤±è´¥
-        + éžæ•´æ•°ç±»åž‹å¯èƒ½ä¼šæŠ¥é”™
+        + ÈôÖµÎª¿Õ£¬·µ»ØÊ§°Ü
+        + ·ÇÕûÊýÀàÐÍ¿ÉÄÜ»á±¨´í
     ]],
     run = function(node, env, value)
         value = value or node:get_env_args("value", env)

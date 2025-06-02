@@ -5,19 +5,19 @@ local M = {
     name = "Index",
     type = "Action",
     children = 0,
-    desc = "ç´¢å¼•è¾“å…¥çš„æ•°ç»„",
+    desc = "Ë÷ÒıÊäÈëµÄÊı×é",
     args = {
         {
             name = "index",
             type = "string",
-            desc = "ç´¢å¼•",
+            desc = "Ë÷Òı",
         }
     },
-    input = { "æ•°ç»„", "ç´¢å¼•?" },
-    output = { "å…ƒç´ " },
+    input = { "Êı×é", "Ë÷Òı?" },
+    output = { "ÔªËØ" },
     doc = [[
-        + åˆæ³•å…ƒç´ ä¸åŒ…æ‹¬ undefined å’Œ null
-        + åªæœ‰ç´¢å¼•åˆ°æœ‰åˆæ³•å…ƒç´ æ—¶å€™æ‰ä¼šè¿”å›ã€ŒæˆåŠŸã€ï¼Œå¦åˆ™è¿”å›ã€Œå¤±è´¥ã€
+        + ºÏ·¨ÔªËØ²»°üÀ¨ undefined ºÍ null
+        + Ö»ÓĞË÷Òıµ½ÓĞºÏ·¨ÔªËØÊ±ºò²Å»á·µ»Ø¡¸³É¹¦¡¹£¬·ñÔò·µ»Ø¡¸Ê§°Ü¡¹
     ]],
     run = function(node, env, arr, key)
         if not arr then

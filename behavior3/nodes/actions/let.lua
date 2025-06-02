@@ -5,20 +5,20 @@ local butil = require "lua.libs.behavior3lua.behavior3.behavior_util"
 local M = {
     name = "Let",
     type = "Action",
-    desc = "å®šä¹‰æ–°çš„å˜é‡å",
-    input = { "å·²å­˜åœ¨å˜é‡å?" },
+    desc = "¶¨ÒåĞÂµÄ±äÁ¿Ãû",
+    input = { "ÒÑ´æÔÚ±äÁ¿Ãû?" },
     args = {
         {
             name= "value",
             type= "json?",
-            desc= "å€¼(value)",
-            oneof= "å·²å­˜åœ¨å˜é‡å",
+            desc= "Öµ(value)",
+            oneof= "ÒÑ´æÔÚ±äÁ¿Ãû",
         }
     },
-    output = { "æ–°å˜é‡å" },
+    output = { "ĞÂ±äÁ¿Ãû" },
     doc = [[
-        + å¦‚æœæœ‰è¾“å…¥å˜é‡ï¼Œåˆ™ç»™å·²æœ‰å˜é‡é‡æ–°å®šä¹‰ä¸€ä¸ªåå­—
-        +  å¦‚æœ\`å€¼(value)\`ä¸º \`null\`ï¼Œåˆ™æ¸…é™¤å˜é‡
+        + Èç¹ûÓĞÊäÈë±äÁ¿£¬Ôò¸øÒÑÓĞ±äÁ¿ÖØĞÂ¶¨ÒåÒ»¸öÃû×Ö
+        +  Èç¹û\`Öµ(value)\`Îª \`null\`£¬ÔòÇå³ı±äÁ¿
     ]],
     run = function(node, env, value)
         local args = node.args

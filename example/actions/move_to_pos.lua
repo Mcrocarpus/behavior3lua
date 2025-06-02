@@ -3,17 +3,17 @@ local bret = require 'lua.libs.behavior3lua.behavior3.behavior_ret'
 local M = {
     name = 'MoveToPos',
     type = 'Action',
-    desc = 'ç§»åŠ¨åˆ°åæ ‡',
+    desc = 'ÒÆ¶¯µ½×ø±ê',
     args = {
         {
             name = 'x',
             type = 'int',
-            desc = 'xåæ ‡'
+            desc = 'x×ø±ê'
         },
         {
             name = 'y',
             type = 'int',
-            desc = 'yåæ ‡'
+            desc = 'y×ø±ê'
         }
     }
 }
