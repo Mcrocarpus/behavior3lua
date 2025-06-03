@@ -1,0 +1,28 @@
+{
+  "version": "1.8.1",
+  "name": "YunoGasai",
+  "prefix": "",
+  "group": [],
+  "import": [],
+  "vars": [],
+  "root": {
+    "id": "1",
+    "name": "Sequence",
+    "input": [],
+    "output": [],
+    "args": {},
+    "children": [
+      {
+        "id": "2",
+        "name": "FindEnemy",
+        "input": [],
+        "output": [
+          "enemy"
+        ],
+        "args": {
+          "distance": 30
+        }
+      }
+    ]
+  }
+}

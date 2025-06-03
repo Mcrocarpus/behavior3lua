@@ -2,11 +2,11 @@
   "files": [
     {
       "path": "trees/hero.json",
-      "desc": "Ó¢ÐÛ²âÊÔAI"
+      "desc": "Ó¢ï¿½Û²ï¿½ï¿½ï¿½AI"
     },
     {
       "path": "trees/monster.json",
-      "desc": "¹ÖÎï²âÊÔAI"
+      "desc": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½AI"
     },
     {
       "path": "trees/test-parallel-with-wait.json",
@@ -23,6 +23,11 @@
     {
       "path": "trees/test-repeat-until-success.json",
       "desc": ""
+    },
+    {
+      "path": "trees/YunoGasai.json",
+      "desc": ""
     }
-  ]
+  ],
+  "settings": {}
 }

@@ -373,17 +373,5 @@
     "doc": "+ 等待count次\n",
     "name": "WaitCount",
     "type": "Action"
-  },
-  {
-    "args": [
-      {
-        "desc": "tick",
-        "name": "tick",
-        "type": "int"
-      }
-    ],
-    "desc": "等待特定次数",
-    "name": "WaitForCount",
-    "type": "Action"
   }
 ]
