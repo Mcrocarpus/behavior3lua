@@ -12,11 +12,16 @@
     "type": "Decorator"
   },
   {
-    "desc": "¹¥»÷",
-    "input": [
-      "{Ä¿±ê}"
+    "args": [
+      {
+        "desc": "¹«Ê½",
+        "name": "value",
+        "type": "code?"
+      }
     ],
-    "name": "Attack",
+    "desc": "¼ÆËã¹«Ê½",
+    "doc": "+ ×ö¼òµ¥ÊýÖµ¹«Ê½¼ÆËã\n",
+    "name": "Calculate",
     "type": "Action"
   },
   {
@@ -82,38 +87,43 @@
     "type": "Condition"
   },
   {
+    "desc": "½«Á½¸öÊäÈëºÏ²¢ÎªÒ»¸öÊý×é£¬²¢·µ»ØÐÂÊý×é",
+    "input": [
+      "Êý×é1",
+      "Êý×é2"
+    ],
+    "name": "Concat",
+    "output": [
+      "ÐÂÊý×é"
+    ],
+    "type": "Action"
+  },
+  {
+    "desc": "·µ»ØÂú×ãÌõ¼þµÄÔªËØ",
+    "doc": "+ Ö»ÄÜÓÐÒ»¸ö×Ó½Úµã£¬¶à¸ö½öÖ´ÐÐµÚÒ»¸ö\n+ µ±×Ó½Úµã·µ»Ø¡¸ÔËÐÐÖÐ¡¹Ê±£¬·µ»Ø¡¸ÔËÐÐÖÐ¡¹×´Ì¬\n+ ±éÀúÊäÈëÊý×é£¬½«Âú×ãÌõ¼þµÄÔªËØ·ÅÈëÐÂÊý×é\n+ µ±ÐÂÊý×éÎª¿ÕÊ±£¬·µ»Ø¡¸Ê§°Ü¡¹\n",
+    "input": [
+      "Êý×é"
+    ],
+    "name": "Filter",
+    "output": [
+      "±äÁ¿",
+      "ÐÂÊý×é"
+    ],
+    "type": "Action"
+  },
+  {
     "args": [
       {
-        "desc": "x",
-        "name": "x",
-        "type": "int?"
-      },
-      {
-        "desc": "y",
-        "name": "y",
-        "type": "int?"
-      },
-      {
-        "desc": "¿í",
-        "name": "w",
-        "type": "int?"
-      },
-      {
-        "desc": "¸ß",
-        "name": "h",
-        "type": "int?"
-      },
-      {
-        "desc": "²éÕÒÉÏÏÞ",
-        "name": "count",
-        "type": "string?"
+        "desc": "×·×Ù¾àÀë",
+        "name": "distance",
+        "type": "int"
       }
     ],
     "desc": "²éÕÒµÐÈË",
-    "doc": "+ Ã»ÕÒµ½·µ»ØÊ§°Ü\n",
+    "doc": "+ ÕÒµ½·µ»ØÄ¿±êCharIndex\n+ Ã»ÕÒµ½·µ»ØÊ§°Ü\n",
     "name": "FindEnemy",
     "output": [
-      "Ä¿±êµ¥Î»"
+      "Ä¿±ê"
     ],
     "type": "Condition"
   },
@@ -130,23 +140,41 @@
     "type": "Action"
   },
   {
-    "desc": "»ñÈ¡ÉúÃüÖµ",
-    "name": "GetHp",
-    "output": [
-      "ÉúÃüÖµ"
-    ],
-    "type": "Action"
-  },
-  {
-    "desc": "´ý»ú",
-    "name": "Idle",
-    "type": "Action"
-  },
-  {
     "desc": "IfÅÐ¶Ï",
     "doc": "+ ÓµÓÐÈý¸ö×Ó½Úµã(ÖÁÉÙÁ½¸ö)\n+ µ±µÚÒ»¸ö×Ó½Úµã·µ»ØSUCCESSµÄÊ±ºòÖ´ÐÐµÚ¶þ¸ö×Ó½Úµã²¢·µ»Ø´Ë×Ó½ÚµãµÄ·µ»ØÖµ\n+ ·ñÔòÖ´ÐÐµÚÈý¸ö×Ó½Úµã²¢·µ»ØÕâ¸ö½ÚµãµÄ·µ»ØÖµ,ÈôÎÞµÚÈý¸ö×Ó½Úµã,Ôò·µ»ØFAIL\n",
     "name": "IfElse",
     "type": "Composite"
+  },
+  {
+    "desc": "ÅÐ¶ÏÔªËØÊÇ·ñÔÚÊý×éÖÐ",
+    "doc": "+ ÈôÊäÈëµÄÔªËØ²»ºÏ·¨£¬·µ»Ø¡¸Ê§°Ü¡¹\n+ Ö»ÓÐÊý×é°üº¬ÔªËØÊ±·µ»Ø¡¸³É¹¦¡¹£¬·ñÔò·µ»Ø¡¸Ê§°Ü¡¹\n",
+    "input": [
+      "Êý×é",
+      "ÔªËØ"
+    ],
+    "name": "Includes",
+    "type": "Condition"
+  },
+  {
+    "args": [
+      {
+        "desc": "Ë÷Òý",
+        "name": "index",
+        "type": "string"
+      }
+    ],
+    "children": 0,
+    "desc": "Ë÷ÒýÊäÈëµÄÊý×é",
+    "doc": "+ ºÏ·¨ÔªËØ²»°üÀ¨ undefined ºÍ null\n+ Ö»ÓÐË÷Òýµ½ÓÐºÏ·¨ÔªËØÊ±ºò²Å»á·µ»Ø¡¸³É¹¦¡¹£¬·ñÔò·µ»Ø¡¸Ê§°Ü¡¹\n",
+    "input": [
+      "Êý×é",
+      "Ë÷Òý?"
+    ],
+    "name": "Index",
+    "output": [
+      "ÔªËØ"
+    ],
+    "type": "Action"
   },
   {
     "desc": "È¡·´",
@@ -165,6 +193,26 @@
   {
     "args": [
       {
+        "desc": "Öµ(value)",
+        "name": "value",
+        "oneof": "ÒÑ´æÔÚ±äÁ¿Ãû",
+        "type": "json?"
+      }
+    ],
+    "desc": "¶¨ÒåÐÂµÄ±äÁ¿Ãû",
+    "doc": "+ Èç¹ûÓÐÊäÈë±äÁ¿£¬Ôò¸øÒÑÓÐ±äÁ¿ÖØÐÂ¶¨ÒåÒ»¸öÃû×Ö\n+  Èç¹û\`Öµ(value)\`Îª \`null\`£¬ÔòÇå³ý±äÁ¿\n",
+    "input": [
+      "ÒÑ´æÔÚ±äÁ¿Ãû?"
+    ],
+    "name": "Let",
+    "output": [
+      "ÐÂ±äÁ¿Ãû"
+    ],
+    "type": "Action"
+  },
+  {
+    "args": [
+      {
         "desc": "ÈÕÖ¾",
         "name": "message",
         "type": "string"
@@ -172,31 +220,6 @@
     ],
     "desc": "´òÓ¡ÈÕÖ¾",
     "name": "Log",
-    "type": "Action"
-  },
-  {
-    "args": [
-      {
-        "desc": "x×ø±ê",
-        "name": "x",
-        "type": "int"
-      },
-      {
-        "desc": "y×ø±ê",
-        "name": "y",
-        "type": "int"
-      }
-    ],
-    "desc": "ÒÆ¶¯µ½×ø±ê",
-    "name": "MoveToPos",
-    "type": "Action"
-  },
-  {
-    "desc": "ÒÆ¶¯µ½Ä¿±ê",
-    "input": [
-      "{Ä¿±ê}"
-    ],
-    "name": "MoveToTarget",
     "type": "Action"
   },
   {
@@ -226,6 +249,57 @@
     "doc": "Ö´ÐÐËùÓÐ×Ó½Úµã²¢·µ»Ø³É¹¦\n",
     "name": "Parallel",
     "type": "Composite"
+  },
+  {
+    "desc": "ÏòÊý×éÖÐÌí¼ÓÔªËØ",
+    "doc": "+ µ±ÊäÈëµÄ¡°Êý×é¡±²»ÊÇÊý×éÀàÐÍÊ±·µ»Ø¡¸Ê§°Ü¡¹\n+ ÆäÓà·µ»Ø¡¸³É¹¦¡¹¡£\n",
+    "input": [
+      "Êý×é",
+      "ÔªËØ"
+    ],
+    "name": "Push",
+    "type": "Action"
+  },
+  {
+    "args": [
+      {
+        "desc": "æœ€å°å€?",
+        "name": "min",
+        "type": "float?"
+      },
+      {
+        "desc": "æœ€å¤§å€?",
+        "name": "max",
+        "type": "float?"
+      },
+      {
+        "desc": "æ˜¯å¦å‘ä¸‹å–æ•´",
+        "name": "floor",
+        "type": "bool?"
+      }
+    ],
+    "desc": "è¿”å›žä¸€ä¸ªéšæœºæ•°",
+    "input": [
+      "æœ€å°å€??",
+      "æœ€å¤§å€??"
+    ],
+    "name": "Random",
+    "output": [
+      "éšæœºæ•?"
+    ],
+    "type": "Action"
+  },
+  {
+    "desc": "Ëæ»ú·µ»ØÊäÈëµÄÆäÖÐÒ»¸ö",
+    "doc": "+ ºÏ·¨ÔªËØ²»°üÀ¨ nil\n+ ÔÚÊäÈëÊý×éÖÐ£¬Ëæ»ú·µ»ØÆäÖÐÒ»¸ö\n+ µ±ÊäÈëÊý×éÎª¿ÕÊ±£¬»òÕßÃ»ÓÐºÏ·¨ÔªËØ£¬·µ»Ø¡¸Ê§°Ü¡¹\n",
+    "input": [
+      "Êý×é"
+    ],
+    "name": "RandomIndex",
+    "output": [
+      "Ëæ»úÄ¿±ê"
+    ],
+    "type": "Action"
   },
   {
     "args": [
@@ -290,13 +364,14 @@
   {
     "args": [
       {
-        "desc": "Ê±¼ä/tick",
-        "name": "time",
+        "desc": "´ÎÊý",
+        "name": "count",
         "type": "int"
       }
     ],
-    "desc": "µÈ´ý",
-    "name": "Wait",
+    "desc": "µÈ´ý´ÎÊý",
+    "doc": "+ µÈ´ýcount´Î\n",
+    "name": "WaitCount",
     "type": "Action"
   },
   {

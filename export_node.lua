@@ -1,5 +1,7 @@
 package.path = package.path .. ';lualib/?.lua'
 
+-- 导出节点设置
+CONST = {}
 Battle = {}
 Char = {}
 Data = {}
@@ -22,6 +24,7 @@ Stall = {}
 Tech = {}
 TechArea = {}
 
+require "lua.docs.CONST"
 require "lua.docs.Battle"
 require "lua.docs.Char"
 require "lua.docs.Data"
@@ -45,7 +48,7 @@ require "lua.docs.Tech"
 require "lua.docs.TechArea"
 
 local olua = require "lua.libs.behavior3lua.olua"
-local process = require "lua.libs.behavior3lua.example.process"
+local process = require "lua.Modules.BehaviorTree.process"
 
 local nodes = {}
 for k, v in pairs(process) do

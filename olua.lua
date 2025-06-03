@@ -870,7 +870,7 @@ function olua.trim(expr, indent, keepspace)
             expr = expr:gsub("\n" .. space, "\n")
             if indent and indent ~= 4 then
                 expr = expr:gsub("\n( +)", function (spaces)
-                    local n = #spaces // 4
+                    local n = math.floor(#spaces / 4)
                     return "\n" .. string.rep(" ", n * indent)
                 end)
             end
@@ -1018,8 +1018,8 @@ function olua.json_stringify(data, options)
     local function json_value_stringify(value)
         local type_name = type(value)
         if type_name == "number" then
-            if value == value // 1 then
-                return value >> 0
+            if value == math.floor(value) then
+                return value
             else
                 return value
             end
@@ -1189,8 +1189,8 @@ function olua.lua_stringify(data, options)
     local function lua_value_stringify(value)
         local type_name = type(value)
         if type_name == "number" then
-            if value == value // 1 then
-                return value >> 0
+            if value == math.floor(value) then
+                return value
             else
                 return value
             end
@@ -1354,8 +1354,8 @@ function olua.ts_stringify(data, options)
             enums:push("")
             return olua_enum
         elseif type_name == "number" then
-            if value == value // 1 then
-                return value >> 0
+            if value == math.floor(value) then
+                return value
             else
                 return value
             end
@@ -1477,3 +1477,4 @@ function olua.ts_stringify(data, options)
 end
 
 return olua
+-- gbk±àÂë
