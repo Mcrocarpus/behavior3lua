@@ -1,6 +1,6 @@
 package.path = package.path .. ';lualib/?.lua'
 
--- 导出节点设置
+-- 瀵煎嚭鑺傜偣璁剧疆
 CONST = {}
 Battle = {}
 Char = {}

@@ -1477,4 +1477,3 @@ function olua.ts_stringify(data, options)
 end
 
 return olua
--- gbk±àÂë

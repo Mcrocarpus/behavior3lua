@@ -18,7 +18,7 @@ local M = {
     output = { "新变量名" },
     doc = [[
         + 如果有输入变量，则给已有变量重新定义一个名字
-        +  如果\`值(value)\`为 \`null\`，则清除变量
+        +  如果`值(value)`为 `null`，则清除变量
     ]],
     run = function(node, env, value)
         local args = node.args

@@ -1,30 +1,6 @@
 {
   "files": [
     {
-      "path": "trees/hero.json",
-      "desc": "Ӣ�۲���AI"
-    },
-    {
-      "path": "trees/monster.json",
-      "desc": "�������AI"
-    },
-    {
-      "path": "trees/test-parallel-with-wait.json",
-      "desc": ""
-    },
-    {
-      "path": "trees/test-parallel.json",
-      "desc": ""
-    },
-    {
-      "path": "trees/test-repeat-until-failure.json",
-      "desc": ""
-    },
-    {
-      "path": "trees/test-repeat-until-success.json",
-      "desc": ""
-    },
-    {
       "path": "trees/YunoGasai.json",
       "desc": ""
     }
