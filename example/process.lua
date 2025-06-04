@@ -37,5 +37,7 @@ return {
     RandomIndex        = require "lua.libs.behavior3lua.behavior3.nodes.actions.random_index",
     Concat             = require "lua.libs.behavior3lua.behavior3.nodes.actions.concat",
 
+    MoveToTarget       = require "lua.Modules.BehaviorTree.actions.move_to_target",
+    WarpToPos          = require "lua.Modules.BehaviorTree.actions.warp_to_pos",
     WaitCount          = require "lua.Modules.BehaviorTree.actions.wait_count",
 }

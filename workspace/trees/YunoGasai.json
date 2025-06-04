@@ -14,14 +14,41 @@
     "children": [
       {
         "id": "2",
-        "name": "FindEnemy",
+        "name": "Selector",
         "input": [],
-        "output": [
-          "enemy"
-        ],
-        "args": {
-          "distance": 30
-        }
+        "output": [],
+        "args": {},
+        "children": [
+          {
+            "id": "3",
+            "name": "FindEnemy",
+            "input": [],
+            "output": [
+              "target"
+            ],
+            "args": {
+              "distance": 20
+            }
+          },
+          {
+            "id": "4",
+            "name": "MoveToTarget",
+            "input": [
+              "target"
+            ],
+            "output": [],
+            "args": {}
+          },
+          {
+            "id": "5",
+            "name": "WaitCount",
+            "input": [],
+            "output": [],
+            "args": {
+              "count": 30
+            }
+          }
+        ]
       }
     ]
   }

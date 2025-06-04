@@ -223,6 +223,15 @@
     "type": "Action"
   },
   {
+    "desc": "移动到目标",
+    "doc": "+ 向目标移动\n",
+    "input": [
+      "目标"
+    ],
+    "name": "MoveToTarget",
+    "type": "Action"
+  },
+  {
     "desc": "判断变量是否存在",
     "input": [
       "判断的变量"
@@ -372,6 +381,34 @@
     "desc": "等待次数",
     "doc": "+ 等待count次\n",
     "name": "WaitCount",
+    "type": "Action"
+  },
+  {
+    "args": [
+      {
+        "desc": "地图类型",
+        "name": "map",
+        "type": "int"
+      },
+      {
+        "desc": "地图",
+        "name": "floor",
+        "type": "int"
+      },
+      {
+        "desc": "x坐标",
+        "name": "x",
+        "type": "int"
+      },
+      {
+        "desc": "y坐标",
+        "name": "y",
+        "type": "int"
+      }
+    ],
+    "desc": "传送到坐标",
+    "doc": "+ 怪物传送到指定位置\n",
+    "name": "WarpToPos",
     "type": "Action"
   }
 ]
